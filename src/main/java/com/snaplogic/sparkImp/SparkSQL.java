@@ -9,6 +9,7 @@ public class SparkSQL {
         SparkSession spark = SparkSession
                 .builder()
                 .appName("SnapLogic Spark SQL example")
+                .master("local")
                 .getOrCreate();
         Dataset<Row> df = spark.read()
                 .format("csv")
