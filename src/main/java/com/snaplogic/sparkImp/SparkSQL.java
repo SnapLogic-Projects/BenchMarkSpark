@@ -23,5 +23,7 @@ public class SparkSQL {
                 .format("csv")
                 .option("header","true")
                 .save(args[1]);
+
+        while (true) {}
     }
 }

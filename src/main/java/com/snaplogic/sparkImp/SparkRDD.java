@@ -24,6 +24,7 @@ public class SparkRDD {
                 sortBy( r1 -> r1.getProviderCity(),true,1);
 
         obj.saveAsTextFile(args[1]);
+        while (true){}
 
     }
 }
